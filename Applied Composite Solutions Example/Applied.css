@@ -1,0 +1,195 @@
+/* Style Sheet for Applied Composite */
+
+/* Specifies the font style */
+
+*{
+	font-family: Trebuchet MS;
+}
+
+/* Specifies the margin and padding for the body, unordered list and list items */
+body, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+/* Specifies the background color for the body of the page */
+body {
+	background: #f7f7f7;
+}
+
+
+/* Specifies some details about our wrapper class, which is the unordered list */
+.wrapper {
+	width: 96%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+/* Specifies some additional details regarding the header, which includes the unordered list */
+header {
+	background: #e7e7e7;
+	padding: 20px ;
+}
+
+/* Determines which side of the screen the text is going to be on */
+header nav {
+	float: right;
+}
+
+/* Specifies that although we have a header called Main Navigation, its line height is nothing. Not visible on webpage */
+header nav h2 {
+	line-height: 0;
+	margin: 0;
+	text-indent: -10000px;
+}
+
+/* Specifies that there is no margin or padding around our unordered list */
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Specifies that we have no list style, text floating right */
+/* Specifies that we have a margin of 10px on each side from other elements */
+header nav li {
+	list-style-type: none;
+	float: right;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+/* Makes sure that background color goes past the list items at the top */
+header:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+/* Changes the color of our text, makes all items uppercase and provides no decoration */
+header nav a {
+	text-decoration: none;
+	color: #4e4e4e;
+	text-transform: uppercase;
+}
+
+/* Want the main banner image to spread across the entire scree */
+#main-banner img {
+	width: 100%;
+}
+
+
+/* Specifies the background color, padding, and border size of the footer */
+footer {
+	background: #202020;
+	/* Specifies padding between text and bottom of page */
+	padding: 30px 0; 
+	border-top: 10px solid #161616; 
+}
+
+footer h4 {
+	margin: 0;
+	color: #555;
+	font-size: 16px;
+}
+
+/* Footer items are floating to the left side, take up 25% of the screen width each and no style */
+
+footer ul {
+	float: left; 
+	width: 100%;
+	list-style-type: none;
+}
+
+footer li {
+	color: #aaa;
+	width: 100%;
+	margin: 20px 0; 
+	font-size: 12px;
+	text-align: center;
+/* Specifies our line spacing */
+	line-height: 1.6em;
+}
+
+/* Extends our background color to go beyond the end of the text */
+footer:after {
+	content: "";
+	display: block;
+	clear:both;
+}
+
+#copyright {
+	clear: both;
+	padding-top: 30px;
+	margin-top: 30px;
+	float: left;
+	text-align: center;
+	width: 100%;
+	/* Creates a line border across the entire page in a different color */
+	border-top: 2px solid #333; 
+	/* Changes the color of the copyright text */
+	color: #999; 
+	font-size: 16px;
+}
+
+.about-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.left-side, .right-side {
+	text-align: center;
+	text-decoration: none;
+	padding: 50px;
+}
+
+.about-list {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation-list {
+	text-align: center;
+	padding: 10px;
+	margin: 20px;
+	text-decoration: none;
+	float: left;
+	border-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

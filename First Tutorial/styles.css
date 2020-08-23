@@ -1,0 +1,164 @@
+/* This will be the beginning of our CSS Style Sheet */
+
+.quote {
+	font-style: italic;
+	text-align: center;
+}
+
+
+/* Here is how we make a grid */
+.grid-table {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto auto;
+}
+
+
+
+/* Here we will write media queries that must meet a specific requirement to show */
+.grid {
+	display: grid;
+	grid-template-columns: 100%;
+}
+
+/* This says that if the width is at least 600 pixels, then we can split the columns */
+@media (min-width: 600px) {
+	.grid {
+		grid-template-columns: 50% 50%;
+	}
+}
+
+@media (min-width: 900px) {
+	.grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+.container {
+	max-width: 840px;
+	margin: 0 auto;
+}
+
+.intro {
+	text-align: center;
+}
+
+.about-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.i-am, .i-like {
+	text-align: center;
+	text-decoration: none;
+}
+
+.about-list {
+	list-style: none;
+	padding: 0;
+}
+
+@media(max-width: 480px) {
+	.about-grid {
+		grid-template-columns: 100%;
+	}
+}
+
+.project-image 
+{
+	justify-self: center;
+	padding: 4%;
+	}
+
+@media (max-width: 650px) {
+	.projects-grid {
+		grid-template-columns: 100%;
+	}
+}
+
+.links-and-contact {
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+
+.links {
+	justify-self: center;
+}
+
+.links-list {
+	list-style: none;
+	padding: 0;
+}
+
+
+@media (max-width: 650px) {
+	.links-and-contact {
+		grid-template-columns: 100%;
+	}
+}
+
+.profile-picture {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+	text-align: center;
+}
+
+.profile-picture: hover {
+	box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
+}
+
+body {
+	font-family: 'Noto Sans', sans-serif;
+
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Roboto Mono', monospace;
+}
+
+body {
+	background-color: #caebf2;
+}
+
+.container > div {
+	margin: 20px auto;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+body {
+	color: #001f3f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
